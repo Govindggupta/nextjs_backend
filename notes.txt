@@ -1,0 +1,16 @@
+#backend and api notes for the nextjs
+
+prefer this for all : https://projects.100xdevs.com/tracks/nextjs-2/next-2-11 
+
+when ever you want to use a cliend functionality such as {userstate , useeff , onclick or else } so to use that thing you need to write   "use client"   on the top of the file to make it cliet side rendering 
+
+localhost/api/user can't be used as we are sending req to the own next server which is not great
+so you should write the db logic into the file instead of writing it in route for fetching 
+for get methods ig 
+
+stop using 
+const client = new Prismaclient() 
+
+instead write a logic for the client in a db.ts , in which it create it only create the client only once even if we are reloading or making new file . 
+
+#server actions 
