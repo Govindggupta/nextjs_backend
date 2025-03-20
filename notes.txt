@@ -14,3 +14,9 @@ const client = new Prismaclient()
 instead write a logic for the client in a db.ts , in which it create it only create the client only once even if we are reloading or making new file . 
 
 #server actions 
+A function is made instead of making a post funciton and then that function is called in the cliend side side instead of making the post req 
+Entries are directly added to the database with just call of a function , instead of making a post request to the server 
+
+you have to write        "use server"         on the of the file to make it strictly server side file
+so that it does not leak the information on the client side and many more reason , please google it imp to know . 
+Can be integrated seamlessly with forms,

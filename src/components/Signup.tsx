@@ -5,6 +5,9 @@ import { useState } from "react";
 import client from '@/db'
 // this is how client for the db should be imported 
 
+import { signup } from "@/actions/user";
+
+
 export default function Signup() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -30,7 +33,12 @@ export default function Signup() {
             {
                 username,
                 password
-            })
+            }
+           
+            // signup(username, password)
+          // and then instead of making req like this , you use the signup functino 
+          // onclick = {async () => {const response = await signup(username , password )} } // or any other thing you want to use 
+          )
 
             // here we are sending req to the own next server instead of the backend server , which is not a good thing that's why fetching is done differently 
             // so instead of writting the db logic in the route file we directly write it over here for fetching 
