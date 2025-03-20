@@ -1,0 +1,24 @@
+refer the project.100xdevs.com/nextjs for the all the content if you are confused , ohk !!
+
+react is not seo optimised 
+
+to get rid of the Waterfall method , next was introduced in which whole html is sent from the server to the client
+
+in nextjs if you want to skip a route but have to make the folder then make folder in (folder_name) , 
+this skips the folder as the route 
+
+layout file for the particular folder is used to render all the children of the route / folder 
+
+// what happening here is that we are writing the logic over here in the top and then fetching the data on the server side side and then rendering it and then sending it to the browser as repsonse from the server side
+
+
+// if we are using any client side functionality then we need to write "client side" on the top of the file we are writing / using it 
+
+
+// if there is a delay in the fetching of the data, then it is said that you should make a loading.tsx in that folder containing the file , and while it is taking the time , it'll run the loading.tsx instead of this file. 
+
+
+// if you want to write your backend in next , you need to write it in a folder nameed api folder and then make file according to the backend route you are making , such as auth and all of that 
+
+import {useRouter} from "next/navigation" 
+this is used to route the user to the another router after being signedup or want to jump user from one to another 
