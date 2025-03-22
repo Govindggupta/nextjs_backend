@@ -22,3 +22,6 @@ layout file for the particular folder is used to render all the children of the 
 
 import {useRouter} from "next/navigation" 
 this is used to route the user to the another router after being signedup or want to jump user from one to another 
+
+
+CDN : content dilivery network 

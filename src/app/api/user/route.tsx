@@ -9,6 +9,7 @@ export function GET() {
 export async function POST(req: NextRequest) {
     
     const body = await req.json();
+    console.log(body)
 
     // hit the entries to the backend
     return NextResponse.json({
